@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { Card } from "../../interfaces/cards/Cards.ts";
 import { UnnormalizedCard } from "../../interfaces/cards/UnnormalizedCard.ts";
@@ -23,4 +24,31 @@ export function normalizeCard(values: UnnormalizedCard): Card {
       zip: values.zip,
     },
   };
+=======
+
+import { Card } from "../../interfaces/cards/Cards.ts";
+import { UnnormalizedCard } from "../../interfaces/cards/UnnormalizedCard.ts";
+
+export function normalizeCard(values: UnnormalizedCard): Card {
+  return {
+    title: values.title,
+    subtitle: values.subtitle,
+    description: values.description,
+    phone: values.phone,
+    email: values.email,
+    web: values.web,
+    image: {
+      url: values.url,
+      alt: values.alt,
+    },
+    address: {
+      state: values.state,
+      country: values.country,
+      city: values.city,
+      street: values.street,
+      houseNumber: values.houseNumber,
+      zip: values.zip,
+    },
+  };
+>>>>>>> e37926e37b9a313da62e0567fc341065ea047aa8
 }
